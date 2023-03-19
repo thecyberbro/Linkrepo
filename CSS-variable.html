@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global | Local Var</title>
+    <style>
+        body{
+            background-color: slategray;
+
+        }
+        div{
+            border: 2px solid black;
+            width: 50px;
+            display: inline-block;
+            border-radius: 5px;
+            padding: 30px;
+        }
+        :root{
+            --main-color: rgb(0, 0, 0);
+            --font: impact;
+
+        }
+        .box1  , .box3 {
+            background-color: aqua;
+            font-family:var(--font);
+        }
+        .box2 , .box4{
+            background-color: blueviolet;
+        }
+        .box1{
+            color: var(--main-color);
+        }
+        .box4{
+            width: auto;
+            display: flexbox;
+            float: right;
+            padding: 20px;
+        }
+        span{
+            font-style: oblique;
+            font-weight: bold;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>CSS VARIABLE</h1>
+    <div class="box1">
+        BOX1
+    </div>
+    <div class="box2">
+        BOX2
+    </div>
+    <div class="box3">
+        BOX3
+    </div>
+    <div class="box4">
+        <span> Global Var ( You can use anywhere in Whole document)</span>
+        ///////Declare in :root | call in anywhere in css <br>
+        <span> local var ( you can use only in specific class)</span>
+        //////Declare and can call in only that class class 
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preserve-3D</title>
+    <style>
+        .parent{
+            width:400px ;
+            height:250px ;
+            margin: 0 0 70px 100px;
+            background: rgba(154, 154, 154, 0.841) ;
+
+            perspective: 800px;
+            transform: rotateY(30deg);
+            transform-style: preserve-3d;
+            
+
+        }
+        #box{
+            width: 400px;
+            height:250px;
+            background: greenyellow;
+            padding-top: 20px;
+
+            transform: rotateX(-30deg);
+            transform-origin: top;
+
+            /* transition:transform 1s; */
+        }
+        /* #box:hover{
+            transform:perspective(800px) rotateX(-30);
+        } */
+
+    </style>
+</head>
+<body>
+    <h1>Noman sami : Tranform style > perserve 3d</h1>
+    <div class="parent">
+        <div id="box">Noman Sami</div>
+    </div>
+    
+</body>
+</html>

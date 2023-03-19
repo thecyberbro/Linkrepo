@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cursor</title>
+    <style>
+        caption{
+            caption-side:initial;
+            text-align: center;
+        }
+        table ,th , td{
+            border: 2px solid black;
+            padding: 10px;
+border-radius: 50px;
+
+        }
+        tr{
+            padding: 5px;
+            margin: 5px;
+        }
+        th , td{
+            background-color: aqua;
+        }
+        #auto{
+            cursor: auto;
+        } 
+#default { 
+    background-color: rgb(0, 134, 78);
+ cursor:default;
+}
+#none{
+    background-color: rgb(70, 109, 4);
+ cursor: none;
+}      
+#context-menu { 
+    background-color: rgb(0, 19, 80);
+    color: aliceblue;
+ cursor: context-menu;
+}
+#help { 
+    background-color: rgb(0, 51, 65);
+    color: aliceblue;
+ cursor: help;
+}
+#pointer { 
+    background-color: rgb(255, 132, 0);
+ cursor: pointer;
+}
+#progress { 
+    background-color: rgb(0, 0, 0);
+    color: azure;
+cursor: progress;
+}
+#wait { 
+    background-color: rgb(75, 3, 103);
+ cursor: wait;
+}
+#cell { 
+    background-color: rgb(37, 77, 180);
+ cursor: cell;
+}
+#crosshair { 
+    background-color: rgb(47, 255, 0);
+ cursor: crosshair;
+}
+#vertical-text { 
+    background-color: rgb(0, 187, 255);
+ cursor: vertical-text;
+}
+#alias { 
+    background-color: pink;
+ cursor: alias;
+}
+#copy { 
+    background-color: rgb(0, 255, 119);
+ cursor: copy;
+}
+#move { 
+    background-color: rgb(97, 94, 255);
+ cursor: move;
+}
+#no-drop{ 
+    background-color: rgb(225, 0, 255);
+ cursor: no-drop;
+}
+#not-allowed { 
+    background-color: rgb(246, 0, 41);
+ cursor: not-allowed;
+}
+#e-resize { 
+    background-color: rgb(209, 211, 110);
+cursor: e-resize;
+}
+#n-resize { 
+    background-color: rgb(83, 0, 14);
+    color: aliceblue;
+ cursor: n-resize;
+}
+#ne-resize { 
+    background-color: rgb(255, 174, 0);
+ cursor: ne-resize;
+}
+#nw-resize { 
+    background-color: rgb(217, 255, 0);
+ cursor: nw-resize;
+}
+#s-resize{ 
+    background-color: rgb(255, 104, 129);
+ cursor: s-resize;
+}
+#se-reize{ 
+    background-color: rgb(0, 255, 200);
+    cursor: se-resize;
+}
+#sw-resize{ 
+    background-color: pink;
+    cursor: sw-resize;
+}
+#w-resize{ 
+    background-color: rgb(197, 102, 118);
+ cursor: w-resize;
+}
+#ew-resize{ 
+    background-color: rgb(30, 255, 0);
+ cursor: ew-resize;
+}
+#ns-resize{ 
+    background-color: rgb(255, 0, 43);
+ cursor: ns-resize;
+}
+#nesw-resize{ 
+    background-color: pink;
+ cursor: nesw-resize;
+}
+#nwse-resize{
+    background-color: rgb(205, 50, 115);
+    cursor: nwse-resize;
+}
+#col-resize{
+    background-color: rgb(47, 0, 255);
+    cursor: col-resize;
+}
+#row-resize{
+    background-color: rgb(0, 142, 218);
+    cursor: row-resize;
+}
+#all-scroll{
+    background-color: rgb(161, 96, 102);
+    cursor: all-scroll;
+}
+#zoom-in{
+    background-color: rgb(159, 16, 131);
+    cursor: zoom-in;
+}
+#zoom-out{
+    background-color: rgb(23, 55, 87);
+    cursor: zoom-out;
+}
+#grab{
+    background-color: yellowgreen;
+    cursor: grab;
+}
+#grabbing{
+    background-color: rgb(153, 177, 105);
+    cursor: grabbing;
+}
+
+    </style>
+</head>
+<body>
+    <caption>Course types </caption>
+    <br>
+    <br>
+    <table>
+        <th>
+            
+            <td> 1 </td>
+            <td> 2 </td>
+        <td> 3 </td>
+        <td> 4 </td>
+        <td> 5 </td>
+        <td> 6 </td>
+        <td> 7 </td>
+        <td> 8 </td>
+        </th>
+        
+        <tr id="auto"><td>auto </td>
+        <td id="default">default </td>
+        <td id="none">none </td>
+    
+        <td id="context-menu">context-menu </td>
+        <td id="help">help </td>
+        <td id="pointer">pointer </td>
+        <td id="progress">progress </td>
+        <td id="wait">wait </td>
+        <td id="cell">cell </td>
+        </tr>
+        
+
+
+        <tr>
+        <td id="crosshair">crosshair </td>
+        <td id="text">text </td>
+
+         <td id="vertical-text">vertical-text </td>
+         <td id="alias">alias </td>
+         <td id="copy">copy </td>
+         <td id="move">move </td>
+         <td id="no-drop">no-drop </td>
+         <td id="not-allowed">not-allowed</td>
+         <td id="e-resize">e-resize</td>
+         
+        
+        </tr>
+        
+
+
+
+        <tr>
+        <td  id="n-size">n-size </td>
+        <td  id="ne-resize">ne-resize </td>
+        <td  id="nw-resize">nw-resize </td>
+    
+        <td  id="s-resize">s-resize </td>
+        <td  id="se-resize">se-resize</td>
+        <td  id="sw-resize">sw-resize</td>
+        <td  id="w-resize">w-resize</td>
+        <td  id="ew-resize">ew-resize</td>
+        <td  id="ns-resize">ns-resize</td>
+        </tr>
+        
+
+
+
+        <tr>
+        <td    id="new-resize">new-resize </td>
+        <td   id="nwse-resize">nwse-resize </td>
+        <td   id="col-resize">col-resize</td>
+    
+        <td   id="row-resize">row-resize </td>
+        <td   id="all-scroll">all-scroll</td>
+        <td   id="zoom-in">zoom-in</td>
+        <td   id="zoom-out">zoom-out </td>
+        <td   id="grab">grab</td>
+        <td   id="grabbing">grabbing </td>
+        </tr>
+       
+
+
+    </table>
+    
+</body>
+</html>

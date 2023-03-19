@@ -1,0 +1,153 @@
+
+Local_VCS
+Centrilized_VCS
+Distributed_VCS
+------------------------------------------------------0-
+Git Three stage 
+1-working directory
+2-Staging area
+3-Git Repository
+------------------------------------------------------1-
+ pwd    ( print workign dir )
+ code . ( open current project into VS code )
+Step-1
+ git config user.name "user_name"
+Step-2
+ git config user.email "user@mail"
+ |
+ git config --list (list all configuration)
+ |
+------------------------------------------------------2-
+ git init-------(to make dir to git_dir )
+ git status-----( to check change/tarck any change)
+ |
+ |
+ git add --a ---(to move files int staging area)
+ git add file_name( to move particular file into staging )
+ or 
+ git add .
+-------------------------------------
+AND To UnStage staged file back
+ |
+ git restore --staged
+ |
+ |
+------------------------------------------------------3-
+ git commit -m "first commit"
+ git status
+ |
+ |
+ git log ( show all prev cahnges )
+ |
+ |
+ |
+------------------------------------------------------4-
+Git IGNORE
+ |create a file with--(.ignore ) extension
+and u can make changes and ignore/file/allfile/dir
+error.log-------------(ignore error.log file)
+*.log-----------------(ignore all .log file)
+demo/------------------(ignore demo dir)
+ |
+ |
+ |
+-------------------------------------------------------5-
+ git diff          (cmp current working dir wth staged data)
+ git diff --staged (cmp staged chang with last commit)
+ |
+ |
+ |
+--------------------------------------------------------6-
+ ****add tracked file to commit by skiping staging area****
+ |
+ git commit -a -m "changes in file1"
+
+ (* note : you can't add untracked file direct to commit)
+           you need to add untracked file to staged before
+ we can only send tracked file directly to commit
+ |
+ |
+ |--------------------------------------------------------7-
+ |UNMODIFYING | unstaging
+ git restore file_name-----------( back deleted code in file,> from  last commit--> whcih you have push earlier)
+ |
+ git checkout -f
+ git checkou file_name.txt
+ |
+ |
+----------------------------------------------------------8- 
+ git mv file1.txt  file3.txt------(rename file1)
+ git rm file_name-----------------(remove file)
+ |
+ |
+ git rm --cached file3.txt
+ |
+ |
+----------------------------------------------------------9-
+(to push local dir(project) to remote repo(github)
+
+1-generate a ssh key 
+2-eval ssh agent
+3-ssh-add pid
+4-clip < command
+
+5-git push origin master (to push local dir(project) to remote repo(github)
+ |
+ |
+ |
+----------------------------------------------------------------
+****************Git Branches*********************** 
+----------------------------------------------------------------
+ |git branch--------------------(to check all brancehs)
+ |git checkou -b devA-----------(CReate a new branch)
+ |
+ git push origin DevA
+ |
+ git checkout master
+ git push origin master
+-----------------------------------------------------
+BRANCHES & Merge
+-----------------------------------------------------
+ |>masetr>
+ git merge DevA
+ or
+ git merge DevB
+ |
+-------------------------------------------------------
+----------------------Flow----------------
+git pull origin master
+git push origin Deva
+git push origin master
+-----------------------------------------------------
+*****************Git Alias**************************
+-----------------------------------------------------
+git config --global alias.s status 
+ |
+ git status > or < git s
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+git config --global alias.sc commit -a -m 
+ |
+ git config -a -m "msg" > or < git sc "msg"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
