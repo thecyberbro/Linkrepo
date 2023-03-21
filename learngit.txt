@@ -93,7 +93,7 @@ demo/------------------(ignore demo dir)
 
 5-git push origin master (to push local dir(project) to remote repo(github)
  |
- |
+ |pus
  |
 ----------------------------------------------------------------
 ****************Git Branches*********************** 
